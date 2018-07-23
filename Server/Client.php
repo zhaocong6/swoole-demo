@@ -17,7 +17,7 @@ class Client
 
     public function connect()
     {
-        if (!$this->client->connect('127.0.0.1', 9510, 1)){
+        if (!$this->client->connect('127.0.0.1', 9502, 1)){
             echo '服务器链接失败!';
             die;
         }
@@ -27,8 +27,9 @@ class Client
         $msg = trim(fgets(STDIN));
         $this->client->send($msg);
 
-        $msg = $this->client->recv();
-        echo $msg;
+//        $msg = $this->client->recv();
+//        echo $msg;
+
     }
 }
 
