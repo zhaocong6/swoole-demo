@@ -22,8 +22,8 @@
         console.log('完成后返回信息:'+ev.data);
     };
 
-    // ws.onclose = function (ev) {
-    //     console.log('链接关闭');
-    // };
+    ws.onclose = function (ev) {
+        console.log('链接关闭');
+    };
 
 </script>
