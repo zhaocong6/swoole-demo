@@ -6,6 +6,7 @@
  * Time: 上午10:08
  */
 
+//创建一个httpSwoole对象, 该对象继承自server
 $http = new swoole_http_server('0.0.0.0', 8080, SWOOLE_BASE);
 
 $http->set([

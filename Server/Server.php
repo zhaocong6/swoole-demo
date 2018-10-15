@@ -55,6 +55,7 @@ class Server
 
     public function onConnect($serv, $fd, $from_id)
     {
+        sleep(5);
         $serv->send($fd, '你好: 链接号码.'.$fd);
     }
 
